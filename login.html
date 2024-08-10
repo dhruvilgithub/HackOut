@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Agricure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Page Content -->
+    <div class="container login-container">
+        <h2>Login to Agricure</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#" id="signupLink">Sign up</a></p>
+        <a href="index.html" class="back-to-home">Back to Home</a>
+    </div>
+
+    <!-- Sign-Up Page Content -->
+    <div class="container signup-container" id="signupContainer" style="display: none;">
+        <h2>Sign Up for Agricure</h2>
+        <form id="signupForm">
+            <label for="signupUsername">Username:</label>
+            <input type="text" id="signupUsername" name="signupUsername" required>
+            <label for="signupPassword">Password:</label>
+            <input type="password" id="signupPassword" name="signupPassword" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <a href="#" id="backToLogin">Already have an account? Login</a>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
